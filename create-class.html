@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Great class</title>
+</head>
+<body>
+<script>
+
+
+    let circle = function (radius) {
+        this.getradius = function () {
+            return radius;
+        }
+        this.getArea = function () {
+            return Math.PI * radius * radius;
+        }
+    };
+
+    circle = new circle(2);
+    let radius = circle.getradius();
+    let area = circle.getArea();
+    alert("radius: " + radius + "; area: " + area);
+</script>
+</body>
+</html>
